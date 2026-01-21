@@ -1,0 +1,327 @@
+/* ==========================================================
+   Home Page Styles
+   ========================================================== */
+
+/* ---------- Hero Section ---------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100dvh; /* full viewport height on all devices */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5%;
+    background-image: url('https://plus.unsplash.com/premium_photo-1683984171269-04c84ee23234?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            /* dark top */
+            rgba(0, 0, 0, 0.3) 50%,
+            /* transparent middle */
+            rgba(0, 0, 0, 0.8) 100%
+            /* dark bottom */
+        );
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    /* above overlay */
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: #eee;
+}
+
+.hero-content .btn-primary {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    background: #e50914;
+    /* Netflix red */
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-content .btn-primary:hover {
+    background: #f40612;
+}
+
+.hero-image {
+    display: none;
+    /* optional, Netflix-style only uses background */
+}
+
+/* ---------- Features Section ---------- */
+.features {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.features-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-card {
+    background: var(--primary-lightest, #f8f9fa);
+    padding: 2rem;
+    flex: 1 1 250px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    margin-bottom: 0.8rem;
+    color: var(--primary-dark, #062c2e);
+}
+
+.feature-card p {
+    color: var(--text-dark, #333);
+    font-size: 1rem;
+}
+
+/* ---------- Popular Products ---------- */
+.popular-products {
+    padding: 4rem 2rem;
+    background: var(--primary-lightest, #f8f9fa);
+}
+
+.popular-products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-dark, #062c2e);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: var(--primary-dark, #062c2e);
+}
+
+.product-card .product-price {
+    font-weight: 600;
+    color: #e50914;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Testimonials ---------- */
+.testimonials {
+    padding: 4rem 2rem;
+    background: var(--primary-light, #e6f1f1);
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-dark, #062c2e);
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: var(--text-dark, #333);
+    margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+    font-weight: 600;
+    color: var(--primary-dark, #062c2e);
+}
+
+/* ---------- Newsletter ---------- */
+.newsletter {
+    padding: 4rem 2rem;
+    background: var(--primary, #062c2e);
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    min-width: 250px;
+}
+
+.newsletter button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #f40612;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    padding: 3rem 2rem;
+    background: var(--primary-dark, #062c2e);
+    color: #fff;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        display: flex;                 /* make hero a flex container */
+        flex-direction: column;
+        justify-content: center;       /* vertical centering */
+        align-items: center;           /* horizontal centering */
+        text-align: center;
+        height: 70vh;                  /* still take 70% of viewport */
+    }
+
+    .hero-content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .features-container,
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}

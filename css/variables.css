@@ -1,0 +1,28 @@
+/* ==========================================================
+   CSS Variables
+   Base theme colors, typography, spacing, transitions
+   ========================================================== */
+
+:root {
+  /* Colors */
+  --primary: #FF6F61;
+  --primary-dark: #e85b50;
+  --secondary: #FFC5B2;
+  --background: #F9F9F9;
+  --card-bg: #FFFFFF;
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --header-footer-bg: #222222;
+
+  /* Typography */
+  --font-heading: 'Poppins', Arial, sans-serif;
+  --font-body: 'Roboto', Arial, sans-serif;
+
+  /* Spacing */
+  --border-radius: 8px;
+  --container-max-width: 1200px;
+  --spacing: 2rem;
+
+  /* Transitions */
+  --transition: 0.3s ease;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoply - Product Detail</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme & Components -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/product-card.css" />
+    <link rel="stylesheet" href="css/components/pagination.css" />
+    <link rel="stylesheet" href="css/components/toast.css">
+
+    <!-- Page -->
+    <link rel="stylesheet" href="css/pages/product-detail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo"><span>Shoply</span></a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="cart.html"
+                >Cart <span class="cart-count" id="cart-count">0</span></a
+              >
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="btn-login" href="login.html">Login</a></li>
+          </ul>
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Product Detail -->
+    <main class="page container">
+      <!-- Product Detail Section -->
+      <section class="product-detail">
+        <div class="product-images">
+          <img
+            id="main-product-image"
+            src=""
+            alt="Product Image"
+            class="main-img"
+          />
+          <div id="thumbnail-images" class="thumbs"></div>
+        </div>
+
+        <div class="product-info">
+          <h1 id="product-title"></h1>
+          <p id="product-category"></p>
+          <div class="rating" id="product-rating"></div>
+          <div class="price" id="product-price"></div>
+          <div class="stock" id="product-stock"></div>
+
+          <div class="product-actions">
+            <div id="quantity-container">
+              <button id="qty-minus">-</button>
+              <input
+                type="number"
+                id="product-quantity"
+                value="1"
+                min="1"
+                max="10"
+              />
+              <button id="qty-plus">+</button>
+            </div>
+
+            <button class="btn-add-cart">Add to Cart</button>
+            <button class="btn-buy-now">Buy Now</button>
+          </div>
+
+          <div class="product-description" id="product-description"></div>
+        </div>
+      </section>
+
+      <!-- Tabs Section -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="description">
+          Description
+        </button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+        <button class="tab-btn" data-tab="comments">Comments</button>
+      </div>
+
+      <div class="tab-panels">
+        <div id="description-tab" class="tab-panel active">
+          <p id="long-description"></p>
+        </div>
+        <div id="reviews-tab" class="tab-panel">
+          <div id="reviews-list"></div>
+        </div>
+        <div id="comments-tab" class="tab-panel">
+          <div id="comments-list"></div>
+          <div class="add-comment">
+            <input
+              type="text"
+              id="new-comment"
+              placeholder="Write a comment..."
+            />
+            <button id="submit-comment">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <section class="related-products">
+        <h2>Related Products</h2>
+        <div id="related-products-grid" class="product-grid"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> Shoply. Student project.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/cart.js"></script>
+    <script src="css/components/toast.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

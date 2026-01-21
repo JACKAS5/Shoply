@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoply - Products</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Variables -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <!-- Base Reset & Layout -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/product-card.css" />
+    <link rel="stylesheet" href="css/components/pagination.css" />
+    <link rel="stylesheet" href="css/components/toast.css">
+    <!-- Page Specific -->
+    <link rel="stylesheet" href="css/pages/products.css" />
+  </head>
+
+  <body>
+    <!-- ===== Header / Navigation ===== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span>Shoply</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="cart.html"
+                >Cart <span class="cart-count" id="cart-count">0</span></a
+              >
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a class="btn-login" href="login.html">Login</a>
+            </li>
+          </ul>
+
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Products Section ===== -->
+    <main class="page">
+      <section class="products-section container">
+        <h1>Our Products</h1>
+
+        <!-- Filters: Search & Sort -->
+        <div class="product-filters">
+          <input type="text" id="search-box" placeholder="Search products..." />
+          <select id="sort">
+            <option value="name">Sort by Name</option>
+            <option value="price">Sort by Price</option>
+          </select>
+        </div>
+
+        <!-- Product Count -->
+        <p id="product-count" class="product-count"></p>
+
+        <!-- Products Grid -->
+        <div id="product-list" class="product-grid"></div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination-container"></div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> Shoply. Student project.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="css/components/toast.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

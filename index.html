@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoply - Home</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Theme variables -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <!-- Global resets & layout -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/product-card.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/pages/home.css" />
+  </head>
+  <body>
+    <!-- ===== Header / Navbar ===== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span>Shoply</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="cart.html"
+                >Cart <span class="cart-count" id="cart-count">0</span></a
+              >
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="btn-login" href="login.html">Login</a></li>
+          </ul>
+
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>Shop Local, Anytime</h1>
+          <p>
+            Discover quality products from local sellers. Simple, fast, and
+            convenient shopping experience.
+          </p>
+          <a href="products.html" class="btn-primary">Browse Products</a>
+        </div>
+        <div class="hero-image">
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features Section ===== -->
+    <section class="features">
+      <div class="container features-container">
+        <article class="feature-card">
+          <h3>Learn Web Structure</h3>
+          <p>Understand real-world HTML components and page layout.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Practice Front-End Skills</h3>
+          <p>
+            Combine HTML, CSS, and JavaScript to build an interactive mini
+            store.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Easy Checkout & Cart</h3>
+          <p>Simulate shopping cart experience and simple checkout flow.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Popular Products Section ===== -->
+    <section class="popular-products">
+      <div class="container">
+        <h2>Popular Products</h2>
+        <div id="popular-products-grid" class="product-grid">
+          <!-- Products will be injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials Section ===== -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>"Shoply made it so easy to buy locally. Highly recommend!"</p>
+            <h4>- Alice M.</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>"Fast checkout and smooth experience. Love it!"</p>
+            <h4>- John D.</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>"Great selection of products from local sellers."</p>
+            <h4>- Maria K.</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter Section ===== -->
+    <section class="newsletter">
+      <div class="container newsletter-container">
+        <h2>Subscribe for Updates</h2>
+        <p>Get the latest deals and new products delivered to your inbox.</p>
+        <form id="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            id="newsletter-email"
+          />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> Shoply. Student project.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoply - Contact</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme variables -->
+    <link rel="stylesheet" href="css/variables.css" />
+
+    <!-- Global resets & layout -->
+    <link rel="stylesheet" href="css/base.css" />
+
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="css/components/navbar.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/pages/contact.css" />
+  </head>
+
+  <body>
+    <!-- ===== Header / Navbar ===== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span>Shoply</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="cart.html">
+                Cart <span class="cart-count" id="cart-count">0</span>
+              </a>
+            </li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a class="btn-login" href="login.html">Login</a></li>
+          </ul>
+
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Contact Hero ===== -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’re here to help. Reach out anytime.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact Content ===== -->
+    <section class="contact-section">
+      <div class="container contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>
+            Have a question, suggestion, or need support?
+            Fill out the form or contact us directly.
+          </p>
+
+          <ul>
+            <li><strong>Email:</strong> support@shoply.com</li>
+            <li><strong>Phone:</strong> +855 12 345 678</li>
+            <li><strong>Location:</strong> Phnom Penh, Cambodia</li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <h2>Send a Message</h2>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            Send Message
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> Shoply. Student project.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

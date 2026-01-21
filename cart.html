@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoply - Cart</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme variables & global CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/product-card.css" />
+    <link rel="stylesheet" href="css/pages/cart.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Shoply</a>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="cart.html"
+                >Cart <span class="cart-count" id="cart-count">0</span></a
+              >
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="btn-login" href="login.html">Login</a></li>
+          </ul>
+
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Cart Section -->
+    <main class="container cart-page">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart-layout">
+      <!-- Cart Items -->
+      <section class="cart-items-section" aria-labelledby="cart-items-heading">
+        <h2 id="cart-items-heading" class="sr-only">Cart items</h2>
+
+        <!-- Filled cart content (shown via JS) -->
+        <div id="cart-filled" class="hidden">
+          <div class="cart-items-list" id="cart-items-list">
+            <!-- Cart items injected here by JS -->
+          </div> 
+
+          <div class="cart-continue">
+            <a href="products.html" class="btn btn-outline">Continue Shopping</a>
+          </div>
+        </div>
+
+        <!-- Empty cart state -->
+        <div id="cart-empty" class="cart-empty-state">
+          <div class="empty-icon">🛒</div>
+          <h2>Your cart is empty</h2>
+          <p>Looks like you haven't added any products yet.</p>
+          <a href="products.html" class="btn btn-primary">Start Shopping</a>
+        </div>
+      </section>
+
+      <!-- Order Summary -->
+      <aside class="cart-summary" aria-labelledby="summary-heading">
+        <div class="summary-card">
+          <h2 id="summary-heading">Order Summary</h2>
+
+          <div class="summary-row">
+            <span>Subtotal (<span id="item-count">0</span> items)</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping">Calculated at checkout</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Estimated Tax</span>
+            <span id="tax">-</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <strong id="grand-total">$0.00</strong>
+          </div>
+
+          <button class="btn btn-checkout" id="checkout-btn" disabled>
+            Proceed to Checkout
+          </button>
+
+          <p class="secure-note">
+            Secure checkout • Free returns on eligible items
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> Shoply. Student project.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

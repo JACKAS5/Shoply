@@ -7,6 +7,8 @@
 
 A scalable, modular e-commerce web application demonstrating modern frontend development practices with vanilla JavaScript.
 
+[![Live Demo]](https://jackas5.github.io/Shoply/index.html)
+
 ## Table of Contents
 
 - [Overview](#overview)

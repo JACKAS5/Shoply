@@ -1,4 +1,4 @@
-# Shoply E-Commerce Platform
+# Shoply E-Commerce Platform | [Live Demo Here](https://jackas5.github.io/Shoply/index.html)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -6,8 +6,6 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 A scalable, modular e-commerce web application demonstrating modern frontend development practices with vanilla JavaScript.
-
-[![Live Demo]](https://jackas5.github.io/Shoply/index.html)
 
 ## Table of Contents
 

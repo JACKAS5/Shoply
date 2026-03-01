@@ -29,7 +29,7 @@ The platform implements a complete shopping experience including product catalog
 
 ## Screenshot
 
-![Shoply Desktop Preview](./images/)
+![Shoply Desktop Preview](./images/Shoply_Screentshot.png)
 
 ## Key Features
 

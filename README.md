@@ -27,6 +27,10 @@ Shoply is a comprehensive e-commerce platform built entirely with vanilla HTML5,
 
 The platform implements a complete shopping experience including product catalog management, shopping cart functionality, user authentication, and administrative controls. Its modular architecture facilitates easy migration to modern frameworks like React or Vue.js.
 
+## Screenshot
+
+![Shoply Desktop Preview](./images/)
+
 ## Key Features
 
 ### Customer Features
